@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sluta slå mig</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Max är cool</h1>
+    <div class="hidden">SLUTA SLÅ MIG!!</div>
+    <script>
+      let h1 = document.querySelector('h1');
+      h1.onclick = function () {
+        let div = document.querySelector('div');
+        div.classList.remove('hidden');
+      };
+    </script>
+
+    <script>
+      let namn = prompt('vad heter du?') || 'din fegis';
+      alert('du luktar illa ' + namn);
+
+      let svar = confirm('är du en jävul ');
+      if (svar === true) {
+        alert('HEJ DIN JÄVUL');
+      } else {
+        alert('DET ÄR DU VISST ');
+      }
+
+      let ålder = prompt('hur många år är du?') || 21;
+
+      if (ålder > 9) {
+        alert('vad gammal du är ' + namn);
+      } else {
+        alert('vad ung du är ' + namn);
+      }
+    </script>
+  </body>
+</html>
